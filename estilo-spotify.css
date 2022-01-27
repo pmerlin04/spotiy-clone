@@ -1,0 +1,357 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background-color: rgb(41, 65, 171);
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    
+}
+
+.cabecalho img{
+    height: 90px;
+    width:160px;
+    margin-left: -80px;
+    cursor: pointer;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 32px;
+    margin-right: -50px;
+}
+
+.cabecalho-menu-item{
+    font-family: Circular,spotify-circular,Helvetica,Arial,sans-serif;
+    color: #fff2ef;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+}
+
+.cabecalho-menu a#barra{
+    cursor: context-menu;
+    text-decoration: uppercase;
+}
+
+.cabecalho-menu a#barra:hover{
+    color: #fff2ef;
+}
+
+.cabecalho-menu-item:hover{
+    color: #1ed760;
+}
+
+.burguer{
+    display: none;
+    
+}
+
+.burguer div{
+    width: 30px;
+    height: 3px;
+    margin: 4px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 800px){
+    .cabecalho-menu{
+        width: 500px;
+        height: 1083px;
+        flex-direction: column;
+        background-color: inherit;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        align-items: flex-start;
+        transform: translateX(100%);
+        transition: 0.4s;
+        
+    }
+
+    .cabecalho-menu a{
+        margin-left: 50px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .cabecalho-menu a#premium{
+        margin-top: 30px;
+    }
+
+    .cabecalho-menu a#barra{
+        transform: rotate(90deg);
+        cursor: text;
+    }
+
+    .cabecalho-menu a#inscrever-se{
+        color: #919496;
+        font-size: 24px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .cabecalho-menu a#inscrever-se:hover{
+        color: #1ed760;
+    }
+
+    .cabecalho-menu a#entrar{
+        color: #919496;
+        font-size: 24px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .cabecalho-menu a#entrar:hover{
+        color: #1ed760;
+    }
+
+    
+
+
+
+    .burguer{
+        display: block;
+        
+    }
+
+    .exibir{
+        transform: translateX(0%);
+    }
+
+    .burguer .close1{
+        transform: rotate(45deg) translate(6px);
+    }
+
+    .burguer .close2{
+        transform: rotate(-45deg) translate(3px);
+    }
+
+    .burguer .close3{
+        opacity: 0;
+    }
+
+
+    .conteudo-escrito h1.segundo{
+        margin-left: -200px;
+    }
+}
+
+
+
+
+
+
+
+.conteudo-escrito{
+    margin-top: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 38px;
+}
+
+.conteudo-escrito h1{
+    font-size: 120px;
+    font-weight: 900;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    color: #1ed760;
+}
+
+.conteudo-escrito h1.segundo{
+    margin-top: -60px;
+    
+}
+
+.conteudo-escrito h4{
+    color: #1ed760;
+}
+
+input[type=button]{
+    background-color:#1ed760;
+    color: rgb(41, 65, 171);
+    border-radius: 500px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    border: none;
+    width: 205px;
+    height: 50px;
+    cursor: pointer;
+}
+
+input[type=button]:hover{
+        transform: scale(1.1);
+        opacity: 93%;
+}
+
+.rodape{
+    height: 510px;
+    display: flex;
+    margin-top: 200px;
+    background-color: black;
+}
+
+
+/*RODAPE EMPRESA*/
+.rodape .empresa{
+    margin-top: 85px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.rodape .empresa a{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.rodape .empresa a#titulo1{
+    color: #919496;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: uppercase;
+    cursor: text;
+}
+
+.rodape .empresa a:hover{
+    color: #1ed760;
+}
+
+/*RODAPE COMUNDIADES*/
+.rodape .comunidades{
+    margin-top: 85px;
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.rodape .comunidades a{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.rodape .comunidades a#titulo2{
+    color: #919496;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: uppercase;
+    cursor: text;
+}
+
+.rodape .comunidades a:hover{
+    color: #1ed760;
+}
+
+
+/*RODAPE LINKS UTEIS*/
+.rodape .links-uteis{
+    margin-top: 85px;
+    margin-left: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.rodape .links-uteis a{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.rodape .links-uteis a#titulo3{
+    color: #919496;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: uppercase;
+    cursor: text;
+}
+
+.rodape .links-uteis a:hover{
+    color: #1ed760;
+}
+
+
+
+.rodape img{
+    margin-top: 30px;
+    margin-left: 165px;
+    display: block;
+    justify-content: space-between;
+    width: 180px;
+    cursor: pointer;
+}
+
+
+/*PARTE DOS DIREITOS, COOKIES, ETC*/
+.txt-rodape{
+    display: flex;
+    margin-top: 420px;
+    margin-left: -750px;
+    gap: 25px;
+    padding: 1em 0;
+}
+
+.txt-rodape a{
+    color: #919496;
+    font-size: 12px;
+}
+
+.txt-rodape a:hover{
+    color: #1ed760;
+}
+
+/*PARTE DO 'BRASIL' E 'SPOTIFY AB' */
+.txt2-rodape{
+    font-size: 12px;
+    margin-top: 420px;
+    margin-left: 610px;
+}
+.txt2-rodape a{
+    color: #919496;
+    font-weight: 400;
+}
+
+.txt2-rodape a:hover{
+    color: #1ed760;
+}
+
+.txt3-rodape{
+    font-size: 12px;
+    margin-top: 445px;
+    margin-left: -96px;
+}
+
+.txt3-rodape a{
+    color: #919496;
+    font-weight: 400;
+}
+
+.txt3-rodape a:hover{
+    color: #1ed760;
+}
+
